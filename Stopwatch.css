@@ -1,0 +1,90 @@
+/* Basic styling and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background:url(Stadium.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .stopwatch-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .display {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #startPauseBtn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  #startPauseBtn.pause {
+    background-color: #e91e63;
+  }
+  
+  #resetBtn {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  #lapBtn {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .laps {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .laps h2 {
+    margin-bottom: 10px;
+  }
+  
+  .laps ul {
+    list-style-type: none;
+  }
+  
+  .laps li {
+    font-size: 1em;
+    padding: 5px;
+  }
+  
